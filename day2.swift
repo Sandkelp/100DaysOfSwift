@@ -12,4 +12,9 @@ var website = (name: "Apple", url: "www.apple.com")
 //you can use strings to get the data instead of an index
 var roles = ["captain": "Mal", "engineer": "Kaylee"]
 
-//5. 
+//5. Empty Collection
+var favoriteColors = Dictionary<String, String>()
+
+//6. Enumerations
+//fixed set of data like days in a week not places visited
+
