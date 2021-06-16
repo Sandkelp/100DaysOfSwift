@@ -80,3 +80,37 @@ struct Person {
         return "My social security number is \(id)"
     }
 }
+
+//6. Deinitializers 
+class Person {
+    var name = "John Doe"
+
+    init() {
+        print("\(name) is alive!")
+    }
+
+    func printGreeting() {
+        print("Hello, I'm \(name)")
+    }
+}
+
+for _ in 1...3 {
+    let person = Person()
+    person.printGreeting()
+}
+
+deinit {
+    print("\(name) is no more!")
+}
+//7. Mutability
+class Singer {
+    var name = "Taylor Swift"
+}
+
+let taylor = Singer()
+taylor.name = "Ed Sheeran"
+print(taylor.name)
+
+class Singer {
+    let name = "Taylor Swift"
+}
